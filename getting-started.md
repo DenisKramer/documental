@@ -14,7 +14,7 @@ Add the following
 
 ```yaml
 template:
-    url: http://github.com/kramergroup/couscous-elegant
+    url: https://github.com/DenisKramer/documental
 ```
 
 to your `couscous.yml` file. **Done**.

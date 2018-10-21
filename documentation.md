@@ -6,14 +6,16 @@ layout: documentation
 
 The template is fully configurable through `couscous.yml` or (to a lesser extend) through the header in Markdown files.
 
-## Side-wide variables
+## Site-wide variables
 
 Variables can be defined in `couscous.yml` and the yaml-header of Markdown files.
 
-| Variable      | Description                                                       |
-| ------------- | ----------------------------------------------------------------- |
-| `title`       | The title is displayed in the top-left corner and the window name |
-| `description` | A description of the project.                                     |
+| Variable      | Description                                                            |
+| ------------- | ---------------------------------------------------------------------- |
+| `title`       | The title is displayed in the top-left corner and the window name      |
+| `description` | A description of the project.                                          |
+| `baseUrl`     | The base-URL of the webpage                                            |
+| `githubUrl`   | The URL of the repository on Github; used for "edit on GitHub" buttons |
 
 ## Header
 

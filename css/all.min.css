@@ -7845,6 +7845,14 @@ pre {
 pre code {
   background: transparent;
 }
+thead {
+  border-bottom: solid black 1px;
+}
+td,
+th {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
 .hljs {
   background: transparent;
   padding: 0;

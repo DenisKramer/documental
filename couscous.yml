@@ -16,6 +16,7 @@ exclude:
 highlight:
     languages:
         - yaml
+        - bash
 
 header:
     items:
@@ -44,9 +45,3 @@ menu:
                 build:
                     text:                Build environment
                     url:                 build.html
-                container-configuration:
-                    text:                Container configuration
-                    url:                 container-configuration.html
-                container:
-                    text:                Using the container
-                    url:                 container.html

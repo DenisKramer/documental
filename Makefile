@@ -6,7 +6,6 @@ COUSCOUS=docker run --rm --interactive \
 				 -e GIT_EMAIL="$(shell git config --get user.email)" \
 				 couscous
 
-
 .PHONY: default
 default: preview
 

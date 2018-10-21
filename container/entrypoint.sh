@@ -33,4 +33,8 @@ elif isCommand "$1"; then
   set -- /sbin/tini -- couscous "$@"
 fi
 
+# check if deploy is requested and configure git
+git config --global user.name "$GIT_NAME"
+git config --global user.email "$GIT_EMAIL"
+
 exec "$@"

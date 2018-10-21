@@ -7,7 +7,7 @@ COPY entrypoint.sh /entrypoint.sh
 RUN chmod a+x /entrypoint.sh
 
 
-RUN adduser -D couscous; chown couscous /app 
+RUN adduser -D couscous; chown couscous /app
 USER couscous
 
 ENTRYPOINT ["/entrypoint.sh"]

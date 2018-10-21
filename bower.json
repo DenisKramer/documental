@@ -7,6 +7,6 @@
     },
 
     "scripts": {
-      "postinstall": "rm -rf bower_components/fontawesome/src"
+      "postinstall": "rm -rf website/bower_components/fontawesome/src"
     }
 }

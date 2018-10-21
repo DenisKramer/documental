@@ -58,26 +58,79 @@
         </div>
     </header>
 
-        <div class="home">
+    
+    <div class="container documentation">
 
-        <section class="jumbotron">
-            <div class="container">
-                <h1>
-                    Docu<strong>mental</strong>
-                </h1>
-                <p>
-                    A template for <a href="http://couscous.io">Couscous</a> based on <a href="http://php-di.org/">PHP-DI documentation</a>
-                </p>
-                <p>
-                    <a href="https://deniskramer.github.io/documental/getting-started.html" class="btn btn-lg btn-primary" title="Get started with dependency injection and PHP-DI">
-                        Get started
-                    </a>
-                    <a href="https://deniskramer.github.io/documental/documentation.html" class="btn btn-lg btn-default" title="Read the PHP-DI documentation">
-                        Documentation
-                    </a>
-                </p>
+        <div class="sidebar">
+            <ul>
+                                    <li>
+                        <span class="section-title">Usage</span>
+
+                        <ul>
+                                                            <li class="">
+                                    <a href="https://deniskramer.github.io/documental/getting-started.html">
+                                        Getting started
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="https://deniskramer.github.io/documental/documentation.html">
+                                        Template configuration
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </li>
+                                    <li>
+                        <span class="section-title">Development</span>
+
+                        <ul>
+                                                            <li class="">
+                                    <a href="https://deniskramer.github.io/documental/build.html">
+                                        Build environment
+                                    </a>
+                                </li>
+                                                    </ul>
+                    </li>
+                            </ul>
+        </div>
+
+        <article>
+            <div class="pull-right">
+                <a href="https://github.com/DenisKramer/documental/blob/master/build.md" class="btn btn-default btn-sm" title="Fork PHP-DI and improve the documentation via a pull request">
+                    Edit this page on GitHub
+                </a>
             </div>
-        </section>
+
+            <h1 id="build-environment">Build environment</h1>
+<p>This template comes with a small build environment for development based on <a href="https://www.gnu.org/software/make/">GNU Make</a>.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>The build is fully dockerised. Therefore, the only prerequisites are:</p>
+<ul>
+<li><a href="https://www.docker.com/">Docker</a>, and</li>
+<li><a href="https://www.gnu.org/software/make/">GNU Make</a></li>
+</ul>
+<h2 id="build-targets">Build targets</h2>
+<p>There are two main make targets:</p>
+<p>1) Launch a local web-server and automatically updates the
+website every time a source file changes</p>
+<pre><code class="language-bash">make preview</code></pre>
+<p>2) Build the web page and deploys it to GitHub pages.</p>
+<pre><code class="language-bash">make deploy</code></pre>
+<h2 id="build-container">Build container</h2>
+<p>The template provides a <code>Dockerfile</code> in the <code>container</code> folder for a suitable build
+environment. The container has <a href="http://couscous.io">Couscous</a> and <a href="http://lesscss.org/">Less</a>
+pre-installed.</p>
+<h3 id="ssh-and-github-credentials">SSH and GitHub credentials</h3>
+<p>The container can also deploy the generated site to GitHub, but needs access to
+your GitHub credentials. Your <code>.ssh</code> folder is linked into the container at runtime
+to achieve this. Further, your git name and email are passed as environment variables.</p>
+<p>If your local git setup (including password-free ssh) is functioning, you should not have any
+problems committing from within the container.</p>
+<h3 id="force-container-build">Force container build</h3>
+<p>Make checks if a Docker image with name <code>couscous</code> exists. It will only trigger a
+Docker build <em>automatically</em> if the image is not present. To force a rebuild of the
+build container use</p>
+<pre><code class="language-bash">make container-build</code></pre>
+        </article>
 
     </div>
 

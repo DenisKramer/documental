@@ -1,12 +1,12 @@
-baseUrl:                                 http://php-di.org
-githubUrl:
+baseUrl:                                 https://deniskramer.github.io/documental
+githubUrl:                               https://github.com/DenisKramer/documental
 
 title:                                   Documental
 description:                             An elegant template for documentation using Couscous                        My wonderful software does fantastic things
 
 scripts:
     before:
-#        - lessc --clean-css website/less/main.less website/css/all.min.css
+        - lessc --clean-css website/less/main.less website/css/all.min.css
 
 exclude:
     - website

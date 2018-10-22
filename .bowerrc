@@ -1,5 +1,0 @@
-{
-  "scripts": {
-    "postinstall": "rm -rf website/bower_components/fontawesome/src"
-  }
-}

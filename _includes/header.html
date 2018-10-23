@@ -1,0 +1,27 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-light bg-light justify-content-between">
+    <div class="container d-flex justify-content-between">
+      <div class="flex-sm-grow-1">
+        <a class="navbar-brand" href="{{ site.baseUrl }}/" title="{{ site.description }}">{{ site.title }}</a>
+      </div>      <!--
+            <div class="navbar-form navbar-left hidden-xs hidden-sm">
+                <input id="search-input" type="text" class="form-control" placeholder="Search...">
+            </div>
+            -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-navigation" aria-controls="#top-navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="top-navigation">
+        <ul class="navbar-nav ml-auto">
+          {% for item in site.header.items %}
+            <li class="nav-item"><a class="nav-link" href="{{ site.baseUrl }}/{{ item.url }}" title="{{ item.text }}">{{ item.text }}</a></li>
+          {% endfor %}
+          {% if site.github.url %}
+            <li class="nav-item"><a class="nav-link github" href="{% include github_url %}" title="{{ site.title }}"><i class="fab fa-github"></i></a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+</header>

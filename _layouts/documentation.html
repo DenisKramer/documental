@@ -1,0 +1,32 @@
+---
+layout: base
+---
+
+<div class="container documentation">
+
+    <div class="sidebar">
+        <ul>
+            {% for item in site.menu.items %}
+                <li>
+                    <span class="section-title">{{ item.section }}</span>
+
+                    <ul>
+                        {% for item in item.items %}
+                            <li class="">
+                                <a href="{{ item.url | absolute_url }}">
+                                    {{ item.text|raw }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <article>
+        {% include github_edit_btn %}
+        {{ content|raw }}
+    </article>
+
+</div>

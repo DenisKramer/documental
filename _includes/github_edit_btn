@@ -1,0 +1,7 @@
+{% if site.github.url %}
+<div class="float-right">
+    <a href="{{ site.github.url }}/blob/{{ site.github.branch | default: master }}/{{ page.path }}" class="btn btn-outline-secondary btn-sm" title="Fork and improve the documentation via a pull request">
+        Edit on GitHub
+    </a>
+</div>
+{% endif %}

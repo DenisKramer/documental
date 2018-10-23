@@ -149,9 +149,9 @@ article {
         text-align: right;
         float: left;
         padding: 35px 10px 35px 0;
-        width: 120px;
-        @include media-breakpoint-up(sm) {
-            width: 150px;
+        @include media-breakpoint-down(sm) {
+            visibility: hidden;
+            width: 0px;
         }
         @include media-breakpoint-up(md) {
             width: 200px;
@@ -193,15 +193,14 @@ article {
         }
     }
     article {
-        margin-left: 130px;
-        @include media-breakpoint-up(sm) {
-            margin-left: 300px;
+        @include media-breakpoint-down(sm) {
+            margin-left: 0px;
         }
         @include media-breakpoint-up(md) {
-            margin-left: 350px;
+            margin-left: 250px;
         }
         @include media-breakpoint-up(lg) {
-            margin-left: 400px;
+            margin-left: 300px;
         }
     }
 }

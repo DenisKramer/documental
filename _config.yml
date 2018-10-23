@@ -1,32 +1,30 @@
-baseUrl:                 https://deniskramer.github.io/documental
-githubUrl:               https://github.com/DenisKramer/documental
+baseUrl:       https://deniskramer.github.io/documental
 
-title:                   Documental
-description:             An elegant template for documentation using Couscous                        My wonderful software does fantastic things
+github:
+  url:         https://github.com/DenisKramer/documental
+  branch:      jekyll
+
+title:         Documental
+description:   An elegant template for documentation using Couscous                        My wonderful software does fantastic things
 
 
 header:
   items:
-    - text:              Getting started
-      url:               getting-started.html
-    - text:              Documentation
-      url:               documentation.html
+    - text:    Getting started
+      url:     getting-started.html
+    - text:    Documentation
+      url:     documentation.html
 
 menu:
   items:
-    usage:
-      section:           Usage
+    - section: Usage
       items:
-        getting-started:
-          text:          Getting started
-          url:           getting-started.html
-        configuration:
-          text:          Template configuration
-          url:           documentation.html
+        - text: Getting started
+          url: getting-started.html
+        - text: Template configuration
+          url: documentation.html
 
-    development:
-      section:           Development
+    - section: Development
       items:
-        build:
-          text:          Build environment
-          url:           build.html
+        - text: Build environment
+          url: build.html

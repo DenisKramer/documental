@@ -1,2 +1,6 @@
 .DS_Store
 .couscous
+_site
+.sass-cache
+website
+vendor

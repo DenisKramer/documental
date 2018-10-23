@@ -27,4 +27,4 @@ The template is configurable through `couscous.yml`. It allows to:
 - Customise side menu
 - Configure advanced syntax highlighting
 
-Read the [documentation](documentation.md) for detailed instructions.
+Read the [documentation](documentation.html) for detailed instructions.

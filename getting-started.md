@@ -21,7 +21,7 @@ to your `couscous.yml` file. **Done**.
 
 ## Configuration
 
-The template is configurable through `couscous.yml`. It allows to:
+The template is configurable through `_config.yml`. It allows to:
 
 - Customise header links
 - Customise side menu

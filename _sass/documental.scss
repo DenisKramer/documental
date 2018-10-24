@@ -135,6 +135,9 @@ article {
         position: absolute;
         margin-left: -25px;
         left: 0;
+        @include media-breakpoint-down(xs) {
+          visibility: hidden;
+        }
     }
     a.anchor:hover {
         text-decoration: none;
